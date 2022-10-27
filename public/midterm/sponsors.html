@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Law Day Run</title>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="Law Day Run Assets/NewLDRLogo.jpg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="sponsors/css/grid.css" rel="stylesheet">
+    <link href="sponsors/css/styles.css" rel="stylesheet">
+    <link href="sponsors/css/fonts.css" rel="stylesheet">
+    <script src="sponsors/scripts/jquery.js"></script>
+  <!--  <script src="js/jquery-migrate-1.2.1.js"></script>-->
+    <!--[if lt IE 9]>
+    <div id="ie6-alert" style="width: 100%; text-align:center; background: #232323;">
+        <img src="http://beatie6.frontcube.com/images/ie6.jpg" alt="Upgrade IE 6" width="640" height="344" border="0"
+             usemap="#Map" longdesc="http://die6.frontcube.com"/>
+        <map name="Map" id="Map">
+            <area shape="rect" coords="496,201,604,329"
+                  href="http://www.microsoft.com/windows/internet-explorer/default.aspx" target="_blank"
+                  alt="Download Internet Explorer"/>
+            <area shape="rect" coords="380,201,488,329" href="http://www.apple.com/safari/download/" target="_blank"
+                  alt="Download Apple Safari"/>
+            <area shape="rect" coords="268,202,376,330" href="http://www.opera.com/download/" target="_blank"
+                  alt="Download Opera"/>
+            <area shape="rect" coords="155,202,263,330" href="http://www.mozilla.com/" target="_blank"
+                  alt="Download Firefox"/>
+            <area shape="rect" coords="35,201,143,329" href="http://www.google.com/chrome" target="_blank"
+                  alt="Download Google Chrome"/>
+        </map>
+    </div>
+
+    <script src="js/html5shiv.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
+    <![endif]-->
+</head>
+
+<body>
+    <div class="page">
+
+    <!--========================================================
+                          HEADER
+=========================================================-->
+<header id="header">
+    <div id="stuck_container">
+        <div class="brand flt__n-md">
+            <h1>
+                <a href="index.html">
+                    <span class="text-primary">Law</span>
+                    <span class="text-primary">Day</span>
+                    <span class="text-primary">Run</span>
+                </a>
+                <span class="text-secondary">Belleville, IL</span>
+                <span class="text-secondary">04/29/23&nbsp;</span>
+            </h1>
+        </div>
+        <br>
+        <br>
+        <nav class="nav-fill flt__n-md">
+            <ul class="sf-menu sf-js-enabled sf-arrows text-primary">
+
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="raceinfo.html" class="sf-with-ul">
+                        Race Info
+
+                    </a>
+                    <ul class="sub-menu" style="display: none;">
+                        <li>
+                            <a href="https://lawday5k.itsyourrace.com/register/">Register</a>
+                        </li>
+                        <li>
+                            <a href="raceinfo.html#results">Results</a>
+                        </li>
+                        <li>
+                            <a href="raceinfo.html#photos">Photos</a>
+                        </li>
+                        <li> 
+                            <a href="raceinfo.html#maps" class="sf-with-ul">Maps</a>
+                            <ul class="sub-menu" style="display: block;">
+                                <li>
+                                    <a href="Law Day Run Assets/maps/fivek_route.pdf" target="_blank" class="linkColor">Download 5k Run/Walk</a>
+                                </li>
+                                <li>
+                                    <a href="Law Day Run Assets/maps/youth-route.pdf" target="_blank" class="linkColor">Download Youth Run/Walk</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+                <li class="current">
+                    <a href="sponsors.html">Sponsors</a>
+                </li>
+                <li class="text-info">
+                    <a href="https://forms.gle/2jUA9VfsjYCDKvsb7" target="_blank">Volunteer</a>
+                </li>
+            </ul>
+            <select class="select-menu sf-menu sf-js-enabled sf-arrows" style="display: inline-block;">
+                <option value="#">Navigate to...</option>
+                <option value="http://www.lawdayrun.com/index.html">&nbsp;Home</option>
+                <option value="http://www.lawdayrun.com/raceinfo.html">&nbsp;Race Info</option>
+                <option value="https://lawday5k.itsyourrace.com/register/">–&nbsp;Register</option>
+                <option value="http://www.lawdayrun.com/raceinfo.html#results">–&nbsp;Results</option>
+                <option value="http://www.lawdayrun.com/raceinfo.html#photos">–&nbsp;Photos</option>
+                <option value="http://www.lawdayrun.com/raceinfo.html#maps">–&nbsp;Maps</option>
+                <option value="http://www.lawdayrun.com/maps/fivek_route.pdf">––&nbsp;Download 5k Run/Walk</option>
+                <option value="http://www.lawdayrun.com/maps/youth-route.pdf">––&nbsp;Download Youth Run/Walk</option>
+                <option value="http://www.lawdayrun.com/contact.html">&nbsp;Contact</option>
+                <option value="http://www.lawdayrun.com/sponsors.html">&nbsp;Sponsors</option>
+                <option value="https://forms.gle/2jUA9VfsjYCDKvsb7">&nbsp;Volunteer</option>
+            </select>
+        </nav>
+
+    </div>
+</header>
+    <!--========================================================
+                          CONTENT
+=========================================================-->
+    <section id="content" class="bg-success">
+
+        <div class="container well well__ins6">
+            <div class="row">
+                <div class="grid_12">
+                    <h2>
+                        2022 Sponsors
+                    </h2>
+
+                    <p class="ta__c">
+                        The Law Day Run proceeds benefit the Land of Lincoln Legal Assistance Foundation, Inc., and
+                        the Belleville Running Club. Land of Lincoln Legal Assistance Foundation provides low income and senior residents of southern and central Illinois with high quality
+                        civil litigation services to obtain and maintain their basic human needs. The Belleville Running Club promotes and encourages running as a sport and as a means of healthful exercise in our community; to promote and conduct races or other activities; to disseminate information through newsletters, flyers, presentations, meetings, and educational programs; and to offer opportunities for organized and informal socializing by members.
+                    </p>
+                </div>
+            </div>
+            <div class="row well__ins5">
+                <div class="grid_12">
+                    <h2>
+                        Gold
+                        <span>Sponsors</span>
+                    </h2>
+                </div>
+            </div>
+           
+            <div class="row well__ins5">
+                <div class="grid_6">
+                    <div class="member">
+                        <img class="member_pht" width="300" src="Law Day Run Assets/Sponsors/Gold/NelsonNewLogo19.PNG">
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+                        <div class="member_cnt">
+                            <h3>Nelson &amp; Nelson Law Firm</h3>
+
+                            <p class="text-left">Gold Sponsor</p>
+
+
+                            <p class="text-left">
+                                Nelson &amp; Nelson handles workers compensation &amp; personal injury cases in
+                                Belleville, IL as well as St. Louis. Learn
+                                more about the Nelson &amp; Nelson Law Firm here.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid_6">
+                    <div class="member">
+                        <img class="member_pht" width="300" src="Law Day Run Assets/Sponsors/Gold/Stifel.jpg">
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+                        <div class="member_cnt">
+                            <h3>Stifel Investment Services</h3>
+
+                            <p>Gold Sponsor</p>
+
+
+                            <p>
+                                Stifel is a full service brokerage and investment banking firm. The Company provides
+                                securities brokerage, investment banking,
+                                trading, investment advisory, and related financial services.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row well__ins5">
+                <div class="grid_6">
+                    <div class="member">
+                        <img class="member_pht" width="400" src="Law Day Run Assets/Sponsors/Gold/mmr.jpg">
+						<br>
+						<br>
+                        <br>
+                        <br>
+                        <br>
+						<br>
+                     
+                        <div class="member_cnt" id="sponsorWidthFix">
+                            <h3>Mathis Marifian &amp; Richter LTD</h3>
+						
+                            <p>Gold Sponsor</p>
+
+
+                            <p>
+                                Since 1984, MMR has served businesses and individuals seeking diverse legal services
+                                throughout Southern Illinois and St.
+                                Louis, Missouri.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid_6">
+                    <div class="member">
+                        <img class="member_pht" id="sponsorFix" src="Law Day Run Assets/Sponsors/Gold/Keefe.png">
+
+                        <div class="member_cnt">
+                            <h3>Keefe, Keefe &amp; Unsell PC</h3>
+
+                            <p>Gold Sponsor</p>
+
+
+                            <p>
+                                We recognize that people considering wrongful death actions often want answers and a
+                                sense of closure as well as compensation
+                                to deal with funeral costs, medical expenses, lost family income and other
+                                life-altering
+                                consequences.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row well__ins5">
+                <div class="grid_6">
+                    <div class="member">
+                        <img class="member_pht" id="sponsorWidthFix" src="Law Day Run Assets/Sponsors/Gold/picture.PNG">
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+
+                        <div class="member_cnt">
+                            <h3> Cook, Bartholomew, Shevlin &amp; Cook, LLP </h3>
+
+                            <p>Gold Sponsor</p>
+
+                            <p>
+                                Call 618-310-3050 for a free consultation with our experienced Belleville, Illinois,
+                                personal injury attorneys at Cook, Bartholomew,
+                                Shevlin &amp; Cook, LLP .
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid_6">
+                    <div class="member">
+                        <img class="member_pht" id="sponsorWidthFix" src="Law Day Run Assets/Sponsors/Gold/Becker.PNG">
+                        <div class="member_cnt">
+
+                            <h3>Becker, Hoerner, &amp; Ysursa, P.C.</h3>
+							<br>
+                            <p>Gold Sponsor</p>
+
+                            <p>
+                                Becker, Hoerner, &amp; Ysursa, P.C., represents clients in Belleville, St.
+                                Clair County and Madison County, Illinois.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+				
+            </div>
+			<div class="row well__ins5">
+                <div class="grid_6">
+                    <div class="member">
+                        <img class="member_pht" id="sponsorWidthFix" src="Law Day Run Assets/Sponsors/Gold/pour-law-day-run2.jpg">
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+
+                        <div class="member_cnt">
+                            <h3> Pour @322 CoffeeHouse</h3>
+
+                            <p>Gold Sponsor</p>
+
+                            <p>
+                               We serve freshly-ground Kaldi’s coffee roasted within 24 hours of it reaching your cup! You will absolutely taste the difference.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid_6">
+                    <div class="member">
+                        <img class="member_pht" id="sponsorWidthFix" src="Law Day Run Assets/Sponsors/Gold/2017_Grey Eagle logo.jpg">
+                        <div class="member_cnt">
+
+                            <h3>Grey Eagle</h3>
+							<br>
+                            <p>Gold Sponsor</p>
+
+                            <p>
+                                Grey Eagle is the largest Anheuser-Busch Beer Distributor in Missouri and one of the largest in the Midwest.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+				
+            </div>
+            <div class="row well__ins5">
+                <div class="grid_6">
+                    <div class="member">
+                        <img class="member_pht" width="300" src="Law Day Run Assets/Sponsors/Gold/baker.jpg">
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+                        <div class="member_cnt">
+                            <h3>Baker, Sterchi, Cowden & Rice LLC </h3>
+
+                            <p>Gold Sponsor</p>
+
+
+                            <p>
+                                From single matters to complex mass torts, we defend civil litigation and try cases for our clients across the Midwest and around the nation.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid_6">
+                    <div class="member">
+                        <img class="member_pht" width="300" src="Law Day Run Assets/Sponsors/Gold/bigrushmarketing.png">
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+                        <div class="member_cnt">
+                            <h3>Big Rush Marketing </h3>
+
+                            <p>Gold Sponsor</p>
+
+
+                            <p>
+                                Big Rush Marketing is a full service marketing company certified on the most effective platforms available. We offer graphic design, web design, digital and traditional advertising, social media and everything in between.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+				
+            </div>
+            <div class="row well__ins5">
+                <div class="grid_6">
+                    <div class="member">
+                        <img class="member_pht" width="300" src="Law Day Run Assets/Sponsors/Gold/TheGoriLawfirm.PNG">
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+                        <div class="member_cnt">
+                            <h3>The Gori Law Firm </h3>
+
+                            <p>Gold Sponsor</p>
+
+
+                            <p>
+                                The Gori Law Firm are nationwide asbestos, defective drug and personal injury attorneys in Edwardsville, Illinois.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="grid_6">
+                    <div class="member">
+                        <img class="member_pht" width="300" src="Law Day Run Assets/Sponsors/Gold/bigrushmarketing.png">
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+                        <div class="member_cnt">
+                            <h3>Big Rush Marketing </h3>
+
+                            <p>Gold Sponsor</p>
+
+
+                            <p>
+                                Big Rush Marketing is a full service marketing company certified on the most effective platforms available. We offer graphic design, web design, digital and traditional advertising, social media and everything in between.
+                            </p>
+                        </div>
+                    </div>
+                </div> -->
+				
+            </div>
+
+            <div class="row well__ins5">
+                <div class="grid_12">
+                    <h2>
+                        Silver
+                        <span>Sponsors</span>
+                    </h2>
+                </div>
+            </div>
+            <div class="row well__ins5">
+                <div class="grid_6">
+                    <div class="member">
+                        <img class="member_pht" width="300" src="Law Day Run Assets/Sponsors/Silver/MGM_TheLawFirm.jpg">
+                        <div class="member_cnt">
+
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <h3>Kurowski Shultz LLC</h3>
+
+                            <p>Silver Sponsor</p>
+
+                            <p>
+                               The MG+M Plus Factor provides extra value for clients—and is a reason multiple Fortune 500 companies 
+							   and iconic business brands choose our firm to handle their most critical, high-risk litigation. 
+							   Combining a unified team approach with national resources, creative trial tactics and an unwavering focus on optimal results, 
+							   we achieve outcomes that help businesses thrive.
+                            </p>
+                        </div>
+                    </div>
+					
+                </div>
+                <div class="grid_6">
+                    <div class="member">
+                        <img class="member_pht" id="sponsorWidthFix" src="Law Day Run Assets/Sponsors/Silver/Ann.PNG">
+                        <div class="member_cnt">
+
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <h3>M. Ann Hatch</h3>
+
+                            <p>Silver Sponsor</p>
+
+                            <p>
+                                Ann Hatch is an AV "Peer Review Rated" attorney who concentrates her practice in civil
+                                litigation defense, focusing on products
+                                liability, personal injury defense, premises liability, asbestos and toxic tort
+                                defense.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+			<div class="row well__ins5">
+                <div class="grid_6">
+                    <div class="member">
+                        <img class="member_pht" width="300" src="Law Day Run Assets/Sponsors/Silver/athletico.png">
+                        <div class="member_cnt">
+							<br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <h3>Athletico Physical Therapy</h3>
+
+                            <p>Silver Sponsor</p>
+
+                            <p>
+                                Athletico Physical Therapy provides the highest quality orthopedic rehabilitation services to communities, employers and athletes. Our services include physical and occupational/hand therapy, workers’ compensation, women’s health therapy, concussion management and athletic training. To schedule a free assessment, visit <a target="_blank" href="http://www.athletico.com">www.athletico.com</a>
+                            </p>
+                        </div>
+                    </div>
+					
+                </div> 
+               <!-- <div class="grid_6">
+                    <div class="member">
+                        <img class="member_pht" id="sponsorWidthFix" src="Law Day Run Assets/Sponsors/Silver/Ann.PNG">
+                        <div class="member_cnt">
+
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <h3>M. Ann Hatch</h3>
+
+                            <p>Silver Sponsor</p>
+
+                            <p>
+                                Ann Hatch is an AV "Peer Review Rated" attorney who concentrates her practice in civil
+                                litigation defense, focusing on products
+                                liability, personal injury defense, premises liability, asbestos and toxic tort
+                                defense.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+			
+            <div class="row well__ins5">
+                <div class="grid_12">
+                    <h2>
+                        Bronze
+                        <span>Sponsors</span>
+                        <br>
+
+                    </h2>
+                </div>
+            </div>
+
+            <div class="row well__ins5">
+                <div class="grid_6">
+                    <div class="member">
+                        <img class="member_pht" src="Law Day Run Assets/Sponsors/Bronze/weilmuenster.png">
+                       
+                        <div class="member_cnt">
+						<br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+							<br>
+							<br>
+                            <h3>Weilmuenster, Keck & Brown, P.C.</h3>
+
+                            <p>Bronze Sponsor</p>
+
+
+
+                            <p>
+                                Weilmuenster, Keck & Brown, P.C., was founded in 2000 by senior partner Mike Weilmuenster. The idea was simple. Coming from a larger, high-volume firm, he sought to build a firm that would allow more individual client contact and a more personal investment in each case.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid_6">
+                    <div class="member">
+                        <img class="member_pht" src="Law Day Run Assets/Sponsors/Bronze/Memorial.jpg">
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <div class="member_cnt">
+						<br>
+                            <br>
+                            <br>
+                            
+                            
+                            <h3>Memorial Network</h3>
+
+                            <p>Bronze Sponsor</p>
+
+
+
+                            <p>
+                                The Memorial Network has been more than 56 years in the making, and it’s an ever-evolving plan for better healthcare right here—in your community.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+			   <div class="row">
+                
+                <div class="grid_6">
+                    <div class="member">
+                        <img class="member_pht" id="sponsorWidthFix" src="Law Day Run Assets/Sponsors/Bronze/new.png">
+                        <div class="member_cnt">
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <h3>Bonifeld Rosenstengel</h3>
+
+                            <p>Bronze Sponsor</p>
+
+                            <p>
+                              If you are hurt in an accident, it may feel like your entire life has been taken over. Personal injury, wrongful death and workers' compensation disputes can be complex and all-encompassing. We will help you with your complete recovery.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+				 <!--<div class="grid_6">
+                    <div class="member">
+                        <img class="member_pht" id="sponsorWidthFix" src="Law Day Run Assets/Sponsors/Bronze/ste.jpg">
+                        <div class="member_cnt">
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <h3>St. Elizabeth's Hospital</h3>
+
+                            <p>Bronze Sponsor</p>
+
+                            <p>
+                               St. Elizabeth's Hospital (O'Fallon, Illinois) is an accredited general acute care health facility in the south-central illinois region offers quality inpatient and outpatient care, including a nationally-recognized cardiac care network, outpatient care, state-of-the-art diagnostics and revolutionary, minimally invasive surgeries.
+                            </p>
+                        </div>
+                    </div>
+                </div>-->
+                
+            </div>
+
+
+            <div class="row well__ins5">
+                <div class="grid_12">
+                    <h2>
+                        Supporting
+                        <span>Sponsors</span>
+                    </h2>
+                </div>
+            </div>
+
+            <div class="row well__ins5">
+               <div class="grid_6">
+                    <div class="member">
+                        <img class="member_pht" id="sponsorWidthFix" src="Law Day Run Assets/Sponsors/Supporting/Bennies.jpeg">
+
+                        <div class="member_cnt">
+                            <h3>Bennie's Pizza</h3>
+
+                            <p>Supporting</p>
+
+                            <p>
+                                Hungry for pizza but don’t want a whole pie? Check out this new Belleville restaurant located at 124 E Main St, Belleville, IL 62220.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+				
+                <div class="grid_6">
+                    <div class="member">
+                        <img class="member_pht" id="sponsorWidthFix" src="Law Day Run Assets/Sponsors/Supporting/Helper.PNG">
+						
+                        <div class="member_cnt">
+                            <h3>HelperBroom</h3>
+
+                            <p>Supporting</p>
+
+                            <p>
+                                The law firm of HeplerBroom, located in St. Louis, MO, provides quality representation
+                                for its business clients and is one
+                                of the most experienced &amp; distinguished law firms in the Midwest.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       
+		 <div class="row well__ins5">
+               <div class="grid_6">
+                    <div class="member">
+                        <img class="member_pht" id="sponsorWidthFix" src="Law Day Run Assets/Sponsors/Supporting/ThompsonCoburn.jpg">
+
+                        <div class="member_cnt">
+                            <h3>Thompson Coburn LLP</h3>
+
+                            <p>Supporting</p>
+
+                            <p>
+                                Thompson Coburn LLP provides practical and economical solutions to clients' business demands and legal challenges across more than 50 areas of law.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+				
+                <div class="grid_6">
+                   <div class="member">
+                        <img class="member_pht" id="sponsorWidthFix" src="Law Day Run Assets/Sponsors/Supporting/kelly.jpg">
+
+                        <div class="member_cnt">
+                            <h3>Kelley & Kelley, LLC - Attorneys at Law</h3>
+
+                            <p>Supporting</p>
+
+                            <p>
+                                Kelley & Kelley's experienced attorneys focus their practice on personal injury, criminal defense and family law cases.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+			 <div class="row well__ins5">
+               <div class="grid_6">
+                    <div class="member">
+                        <img class="member_pht" id="sponsorWidthFix" src="Law Day Run Assets/Sponsors/Supporting/fgg.png">
+
+                        <div class="member_cnt">
+                            <h3>Flynn Guymon & Garavalia </h3>
+
+                            <p>Supporting</p>
+
+                            <p>
+                                Flynn Guymon & Garavalia is a top Belleville, Illinois law firm that is proud to serve St. Louis, MO, the St. Louis Metro East and surrounding communities, including: St. Clair, Madison & Monroe Counties. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+				
+                <div class="grid_6">
+                   <div class="member">
+                        <img class="member_pht" id="sponsorWidthFix" src="Law Day Run Assets/Sponsors/Supporting/katzman.png">
+
+                        <div class="member_cnt">
+                            <h3>Katzman & Sugden, LCC</h3>
+
+                            <p>Supporting</p>
+
+                            <p>
+                                With more than 40 years of experience in St. Clair County, Madison County, Monroe County, Randolph County, and the surrounding St. Louis Metro East area, we at Katzman & Sugden, LLC, are dedicated to helping individuals and families in Illinois and Missouri.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row well__ins5">
+                <div class="grid_6">
+                     <div class="member">
+                         <img class="member_pht" id="sponsorWidthFix" src="Law Day Run Assets/Sponsors/Supporting/Lashley.jpg">
+ 
+                         <div class="member_cnt">
+                             <h3>Lashley Animal Hospital</h3>
+ 
+                             <p>Supporting</p>
+ 
+                             <p>
+                                Our skilled, certified and trustworthy veterinarians and staff understand that your pets are family, they are your babies.
+                             </p>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="grid_6">
+                    <div class="member">
+                        <img class="member_pht" id="sponsorWidthFix" src="Law Day Run Assets/Sponsors/Supporting/ChathamAndBaricevic.PNG">
+
+                        <div class="member_cnt">
+                            <h3>Chatham & Baricevic</h3>
+
+                            <p>Supporting</p>
+
+                            <p>
+                                Chatham and Baricevic Law, premier attorneys in Belleville, IL. Some of our specialties include personal injury, workers compensation & medical malpractice.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+               
+             </div>
+        </div>
+
+        <div class="bg-warning well well__ins1">
+            <div class="container">
+                <div class="row">
+                    <div class="grid_12">
+                        <h2 class="hdng__off5">Bonus Links</h2>
+                        <ul class="marked-list text-center">
+                            <li>
+                                <a href="http://lollaf.org/" target="_blank">Land of Lincoln Legal Assistance Foundation, Inc.</a>
+                            </li>
+                            <li>
+                                <a href="http://stclairbar.com/" target="_blank">St. Clair County Bar Association</a>
+                            </li>
+                            <li>
+                                <a href="https://www.belleville.net/" target="_blank">City of Belleville</a>
+                            </li>
+                            <li>
+                                <a href="https://www.belleville.net/354/Parks-Recreation" target="_blank">Belleville Parks &amp; Recreation Department</a>
+                            </li>
+                            <li>
+                                <a href="http://bellevillerunningclub.com/#" target="_blank">Belleville Running Club</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--========================================================
+                          FOOTER
+=========================================================-->
+    <footer id="footer">
+        <div class="container bg-primary text-white">
+            <div class="row">
+                <div class="preffix_1 grid_10">
+                    <p> The Law Day Run proceeds benefit the Land of Lincoln Legal Assistance Foundation, Inc., and
+                        other legal
+                        aid organizations, who provide low income and senior residents of southern and central Illinois
+                        with
+                        high quality civil litigation services to obtain and maintain their basic human needs.</p>
+                        <ul class="socials">
+                            <li>
+                                <a href="https://www.facebook.com/LawDayRun/" target="_blank" ><i class="fa-brands fa-facebook-f fa-3x"></i></a>
+                            </li>
+                        </ul>
+                    <p> 19<small>th</small> Annual St. Clair County Law Day Run</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+    <!--<script src="js/script.js"></script>-->
+</body>
+
+</html>

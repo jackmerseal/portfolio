@@ -1,0 +1,409 @@
+/* Contact Form Basic Styles
+========================================================*/
+#contact-form
+{
+    position: relative;
+
+    padding-top: 4px;
+}
+#contact-form label
+{
+    position: relative;
+
+    display: block;
+
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 16px;
+
+    letter-spacing: normal;
+}
+#contact-form label.message
+{
+    width: 100%;
+    margin-bottom: 34px;
+    margin-left: 0;
+}
+#contact-form fieldset
+{
+    border: none;
+}
+/* Contact Form Placeholder Styles
+========================================================*/
+#contact-form ._placeholder
+{
+    font-family: 'Lato', sans-serif;
+    font-size: 17px;
+    line-height: 20px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: block;
+
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 100% !important;
+    padding: 18px 18px 16px;
+
+    cursor: text;
+
+    color: #fff;
+    -webkit-border-radius: 0;
+       -moz-border-radius: 0;
+            border-radius: 0;
+}
+#contact-form ._placeholder.focused
+{
+    opacity: .4;
+
+    filter: alpha(opacity=40);
+}
+#contact-form ._placeholder.hidden
+{
+    display: none;
+}
+#contact-form .file ._placeholder
+{
+    display: none;
+}
+/* Contact Form Input
+========================================================*/
+#contact-form input[type='text']
+{
+    font-family: 'Lato', sans-serif;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 20px;
+
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 100%;
+    height: 54px;
+    margin: 0;
+    padding: 18px 18px 16px;
+
+    color: #fff;
+    border: 1px solid #fff;
+    -webkit-border-radius: 0;
+       -moz-border-radius: 0;
+            border-radius: 0;
+    outline: none;
+    background-color: #fa6f6f;
+
+    -webkit-appearance: none;
+}
+/* Contact Form Buttons
+========================================================*/
+#contact-form .btn-wr
+{
+    text-align: right;
+}
+#contact-form .btn-wr .btn
+{
+    font: 700 29px 'Lato', sans-serif;
+    line-height: 30px;
+
+    display: inline-block;
+
+    width: 364px;
+    max-width: 100%;
+    padding: 25px 0;
+
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    color: #fff;
+    background: #fcbf60;
+}
+#contact-form .btn-wr .btn:hover
+{
+    text-decoration: none;
+
+    background: #69d7ee;
+}
+@media (max-width: 479px)
+{
+    #contact-form .btn-wr .btn
+    {
+        width: 100%;
+    }
+}
+/* Contact Form Textarea 
+========================================================*/
+#contact-form textarea
+{
+    font-family: 'Lato', sans-serif;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 20px;
+
+    overflow: auto;
+
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 100%;
+    height: 209px !important;
+    padding: 18px 18px 16px;
+
+    resize: none;
+
+    color: #fff;
+    border: 1px solid #fff;
+    -webkit-border-radius: 0;
+       -moz-border-radius: 0;
+            border-radius: 0;
+    outline: none;
+    background-color: #fa6f6f;
+
+    -webkit-appearance: none;
+}
+/* Contact Form Error messages
+========================================================*/
+#contact-form .empty-message,
+#contact-form .error-message
+{
+    font-size: 12px;
+
+    position: absolute;
+    z-index: 99;
+    top: 2px;
+    right: 3px;
+
+    overflow: hidden;
+
+    height: 0;
+
+    -webkit-transition: .3s ease-in height;
+       -moz-transition: .3s ease-in height;
+         -o-transition: .3s ease-in height;
+            transition: .3s ease-in height;
+
+    color: red;
+}
+#contact-form .invalid .error-message,
+#contact-form .empty .empty-message
+{
+    height: 30px;
+}
+/* Contact Form Processing Box
+========================================================*/
+#contact-form .contact-form-loader
+{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    overflow: hidden;
+
+    width: 100%;
+    height: 100%;
+
+    opacity: 0;
+    background: rgba(247, 247, 247, .48) url('../images/form-loader.gif');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    -webkit-background-size: 5% 5%;
+       -moz-background-size: 5%;
+         -o-background-size: 5%;
+            background-size: 5%;
+}
+#contact-form.processing .contact-form-loader
+{
+    z-index: 99;
+
+    -webkit-transition: all .3s ease-in;
+       -moz-transition: all .3s ease-in;
+         -o-transition: all .3s ease-in;
+            transition: all .3s ease-in;
+
+    opacity: .7;
+}
+/* Contact Form Modal
+========================================================*/
+.modal-open
+{
+    overflow: hidden;
+}
+#contact-form .modal
+{
+    font-family: 'Lato', sans-serif;
+    font-size: 13px;
+
+    position: fixed;
+    z-index: 1050;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    display: none;
+    overflow: auto;
+    overflow-y: scroll;
+
+    letter-spacing: normal;
+
+    color: #000;
+    outline: 0;
+
+    -webkit-overflow-scrolling: touch;
+}
+#contact-form .modal h4
+{
+    font-weight: bold;
+
+    margin: 0;
+    padding: 0;
+
+    color: #000;
+}
+.modal.fade .modal-dialog
+{
+    -webkit-transition: -webkit-transform .3s ease-out;
+       -moz-transition:    -moz-transform .3s ease-out;
+         -o-transition:      -o-transform .3s ease-out;
+            transition:         transform .3s ease-out;
+    -webkit-transform: translate(0, -25%);
+       -moz-transform: translate(0, -25%);
+        -ms-transform: translate(0, -25%);
+         -o-transform: translate(0, -25%);
+            transform: translate(0, -25%);
+}
+.modal.in .modal-dialog
+{
+    -webkit-transform: translate(0, 0);
+       -moz-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+         -o-transform: translate(0, 0);
+            transform: translate(0, 0);
+}
+.modal-content
+{
+    position: relative;
+
+    border: 1px solid #999;
+    border: 1px solid rgba(0, 0, 0, .2);
+    -webkit-border-radius: 6px;
+       -moz-border-radius: 6px;
+            border-radius: 6px;
+    outline: none;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+       -moz-background-clip: padding-box;
+            background-clip: padding-box;
+    -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+       -moz-box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+            box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+
+         -o-background-clip: padding-box;
+}
+.modal-backdrop
+{
+    position: fixed;
+    z-index: 1040;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    background-color: #000;
+}
+.modal-backdrop.fade
+{
+    opacity: 0;
+
+    filter: alpha(opacity=0);
+}
+.modal-backdrop.in
+{
+    opacity: .5;
+
+    filter: alpha(opacity=50);
+}
+.modal-header
+{
+    min-height: 16.42857143px;
+    padding: 15px;
+
+    border-bottom: 1px solid #e5e5e5;
+}
+.modal-header .close
+{
+    margin-top: -2px;
+}
+.modal-title
+{
+    line-height: 1.42857143;
+
+    margin: 0;
+}
+.modal-body
+{
+    position: relative;
+
+    padding: 20px;
+}
+.modal-dialog
+{
+    width: 600px;
+    margin: 10px auto;
+}
+@media only screen and (max-width: 768px)
+{
+    .modal-dialog
+    {
+        position: relative;
+
+        width: auto;
+        margin: 10px;
+    }
+}
+/* Contact Form Close icon
+========================================================*/
+.close
+{
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 1;
+
+    float: right;
+
+    opacity: .2;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+
+    filter: alpha(opacity=20);
+}
+.close:hover,
+.close:focus
+{
+    cursor: pointer;
+    text-decoration: none;
+
+    opacity: .5;
+    color: #000;
+
+    filter: alpha(opacity=50);
+}
+button.close
+{
+    padding: 0;
+
+    cursor: pointer;
+
+    border: 0;
+    background: transparent;
+
+    -webkit-appearance: none;
+}
+

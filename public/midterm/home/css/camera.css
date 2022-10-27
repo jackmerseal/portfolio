@@ -1,0 +1,253 @@
+/*========================================================
+                          Camera
+  =======================================================*/
+  .camera_wrap
+  {
+      position: relative;
+      z-index: 0;
+  
+      display: none;
+  }
+  .camera_wrap img
+  {
+      max-width: none !important;
+  }
+  .camera_fakehover
+  {
+      position: relative;
+      z-index: 1;
+  
+      width: 100%;
+      height: 100%;
+      min-height: 60px;
+  }
+  .camera_wrap
+  {
+      width: 100%;
+  }
+  .camera_src
+  {
+      display: none;
+  }
+  .cameraCont,
+  .cameraContents
+  {
+      position: relative;
+      z-index: 1;
+  
+      width: 100%;
+      height: 100%;
+  }
+  .cameraSlide
+  {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+  
+      width: 100%;
+  }
+  .cameraContent
+  {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+  
+      display: none;
+  
+      width: 100%;
+  }
+  .camera_target
+  {
+      position: absolute;
+      z-index: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+  
+      overflow: hidden;
+  
+      width: 100%;
+      height: 100%;
+  
+      text-align: left;
+  }
+  .camera_overlayer
+  {
+      position: absolute;
+      z-index: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+  
+      overflow: hidden;
+  
+      width: 100%;
+      height: 100%;
+  }
+  .camera_target_content
+  {
+      position: absolute;
+      z-index: 2;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+  
+      overflow: hidden;
+  }
+  .camera_loader
+  {
+      position: absolute;
+      z-index: 3;
+      top: 50%;
+      left: 50%;
+  
+      overflow: hidden;
+  
+      width: 36px;
+      height: 36px;
+      margin: -18px 0 0 -18px;
+  
+      border: 1px solid #fff;
+      -webkit-border-radius: 18px;
+         -moz-border-radius: 18px;
+              border-radius: 18px;
+      background: #fff url(../CurrentSiteImages/camera-loader.gif) no-repeat center;
+      background: rgba(255, 255, 255, .9) url(../CurrentSiteImages/camera-loader.gif) no-repeat center;
+  }
+  .camera_bar
+  {
+      position: absolute;
+      z-index: 3;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+  
+      overflow: hidden;
+  }
+  .camera_thumbs_wrap.camera_left .camera_bar,
+  .camera_thumbs_wrap.camera_right .camera_bar
+  {
+      position: absolute;
+  
+      width: auto;
+      height: 100%;
+  }
+  .camera_thumbs_wrap.camera_bottom .camera_bar,
+  .camera_thumbs_wrap.camera_top .camera_bar
+  {
+      position: absolute;
+  
+      width: 100%;
+      height: auto;
+  }
+  .camera_nav_cont
+  {
+      position: absolute;
+      z-index: 4;
+      top: 15px;
+      right: 9px;
+  
+      overflow: hidden;
+  
+      width: 120px;
+      height: 65px;
+  }
+  .camerarelative
+  {
+      position: relative;
+  
+      overflow: hidden;
+  }
+  .imgFake
+  {
+      cursor: pointer;
+  }
+  .camera_command_wrap .hideNav
+  {
+      display: none;
+  }
+  .camera_command_wrap
+  {
+      position: relative;
+      z-index: 4;
+      right: 0;
+      left: 0;
+  }
+  .camera_clear
+  {
+      display: block;
+      clear: both;
+  }
+  .showIt
+  {
+      display: none;
+  }
+  .camera_clear
+  {
+      position: relative;
+  
+      display: block;
+      clear: both;
+  
+      height: 1px;
+      margin: -1px 0 25px;
+  }
+  .camera_next,
+  .camera_prev
+  {
+      font: 400 48px 'FontAwesome';
+      line-height: 28px;
+  
+      position: absolute;
+      z-index: 2;
+      top: 50%;
+  
+      display: inline-block;
+  
+      width: 20px;
+      max-width: 100%;
+      margin-top: -14px;
+      padding: 0 0;
+  
+      cursor: pointer;
+      -webkit-transition: .3s all ease;
+         -moz-transition: .3s all ease;
+           -o-transition: .3s all ease;
+              transition: .3s all ease;
+      text-align: center;
+  
+      color: #fff;
+  }
+  .camera_next:hover,
+  .camera_prev:hover
+  {
+      color: #ee1c25;
+  }
+  .camera_next
+  {
+      right: 1.041666666666667%;
+  }
+  .camera_next:before
+  {
+      content: '\f105';
+  }
+  .camera_prev
+  {
+      left: 1.041666666666667%;
+  }
+  .camera_prev:before
+  {
+      content: '\f104';
+  }
+  
+  
+  
+  
