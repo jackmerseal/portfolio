@@ -1,0 +1,11 @@
+runtime: nodejs18
+handlers:
+# Serve static files with url ending in a file extension
+- url: /(.*\..+)$
+  static_files: dist/\1
+  upload: dist/(.*\..+)$
+  # Catch all handlers to index
+  - url: /.*
+  static_files: dist/index.html
+  upload: dist/index.html
+```
