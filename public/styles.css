@@ -65,13 +65,11 @@ li {
 
 .navbar-menu {
   display: flex;
-  justify-content: flex-start;
   align-items: stretch;
   list-style-type: none;
   margin: 0;
   padding: 0;
   position: relative;
-  background-color: green;
 }
 
 .navbar-item {
@@ -86,7 +84,6 @@ li {
   text-decoration: none;
   cursor: pointer;
   padding: 1em;
-  background-color: green;
   color: white;
 }
 
@@ -95,11 +92,11 @@ li {
 }
 
 .navbar-menu .navbar-menu {
-  display: none;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: stretch;
-  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
   top: 100%;
   min-width: 10em;
 }
@@ -214,12 +211,3 @@ footer {
   }
 }
 
-@media only screen and (max-width: 400px) {
-  .navbar-menu {
-    flex-direction: column;
-  }
-  .navbar-item .navbar-menu {
-    position: relative;
-    top: 0;
-  }
-}
